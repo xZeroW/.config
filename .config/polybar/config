@@ -94,7 +94,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = bspwm
 modules-center = xwindow spotify2
-modules-right = temperature2 memory2 cpu2 date
+modules-right = temperature1 memory2 cpu2 date
 
 tray-detached = false
 tray-offset-x = 0
@@ -848,15 +848,15 @@ thermal-zone = 0
 ; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
 ; to find path to desired file
 ; Default reverts to thermal zone setting
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+hwmon-path = /sys/devices/platform/nct6775.2592/hwmon/hwmon3/temp7_input
 
 warn-temperature = 70
 format = <ramp> <label>
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #c72581
+#format-underline = #c72581
 format-warn = <ramp> <label-warn>
-format-warn-underline = #c7254f
+#format-warn-underline = #c7254f
 label = %temperature%
 label-warn =  %temperature%
 label-warn-foreground = #c7254f
