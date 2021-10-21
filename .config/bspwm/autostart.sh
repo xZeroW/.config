@@ -35,7 +35,7 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 # Wallpaper
 #run variety &
 # Network manager
-#run nm-applet &
+run nm-applet &
 # Package update check
 #run pamac-tray &
 run xfce4-power-manager &
