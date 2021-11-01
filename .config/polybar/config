@@ -94,7 +94,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = bspwm
 modules-center = xwindow spotify2
-modules-right = temperature1 memory2 cpu2 date
+modules-right = temperature1 memory2 cpu2 calendar
 
 tray-detached = false
 tray-offset-x = 0
@@ -395,6 +395,16 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 label = %date% %time%
 
+#################################################################################
+
+[module/calendar]
+type = custom/script
+exec = ~/.config/polybar/scripts/calendar.sh
+interval = 5
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+click-left = ~/.config/polybar/scripts/calendar.sh --popup &
+
 #################################################################
 
 [module/discord]
@@ -409,7 +419,7 @@ format-prefix-foreground = #738adb
 format-underline = #738adb
 click-left = discord &
 click-right = killall Discord && killall Discord
-format-prefix = ""
+format-prefix = """
 
 #################################################################
 
@@ -848,7 +858,7 @@ thermal-zone = 0
 ; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
 ; to find path to desired file
 ; Default reverts to thermal zone setting
-hwmon-path = /sys/devices/platform/nct6775.2592/hwmon/hwmon3/temp7_input
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon1/temp1_input
 
 warn-temperature = 70
 format = <ramp> <label>
