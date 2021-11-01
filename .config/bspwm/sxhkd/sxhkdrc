@@ -72,16 +72,17 @@ super + w
 
 #Gotop
 super + h
-    urxvt 'gotop taskmanager' -e gotop
+    alacritty -t 'gotop task manager' -e gotop
     #urxvt 'htop task manager' -e htop
 
 #arcolinux-logout
 super + x
-    arcolinux-logout
+    ~/.config/rofi/powermenu/powermenu.sh
+    #arcolinux-logout
 
 #Rofi theme selector
-super + r
-    rofi-theme-selector
+#super + r
+#    rofi-theme-selector
 
 #Urxvt
 #super + t
@@ -105,8 +106,8 @@ super + Return
 
 #Keyboard dependent
 #urxvt
-super + KP_Enter
-	urxvt
+#super + KP_Enter
+#	urxvt
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -123,7 +124,7 @@ super + KP_Enter
 
 #dmenu
 super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	dmenu_run -i -nb '#191919' -nf '#81a1c1' -sb '#81a1c1' -sf '#191919' -fn 'FontAwesome:bold:pixelsize=14'
 
 #reload sxhkd:
 super + shift + s
