@@ -5,6 +5,7 @@ $HOME/.config/bspwm/autostart.sh
 #fix for moving spotify to specific workspace
 #bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_command
 
+bspc config top_padding 30
 bspc config border_width 0
 bspc config window_gap 6
 bspc config focused_border_color "#4c566a"
