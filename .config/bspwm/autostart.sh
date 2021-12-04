@@ -14,14 +14,14 @@ function run {
 xrandr --output HDMI-A-0 --mode 2560x1080 --rate 74.99
 #autorandr horizontal
 
-$HOME/.config/polybar/launch.sh &
+~/.config/polybar/launch.sh float &
 
 #change your keyboard if you need it
 #setxkbmap -layout be
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &
-feh --bg-fill /usr/share/backgrounds/papers.co-bj03-art-logo-wave-simple-minimal-dark-2560x1600.jpg &
+feh --bg-scale /usr/share/backgrounds/U1kHcco.jpeg &
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
@@ -35,17 +35,17 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 # Wallpaper
 #run variety &
 # Network manager
-run nm-applet &
+#run nm-applet &
 # Package update check
 #run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
-#lueberry-tray &
-picom --config $HOME/.config/bspwm/picom.conf &
+#blueberry-tray &
+picom --config ~/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-$HOME/.config/dunst/load.sh &
+~/.config/dunst/load.sh &
 #/usr/lib/xfce4/notifyd/xfce4-notifyd &
-run volumeicon &
+#run volumeicon &
 #run solaar &
 wmname LG3D &
 #nitrogen --restore &

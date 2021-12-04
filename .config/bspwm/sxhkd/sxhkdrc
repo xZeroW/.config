@@ -64,7 +64,8 @@ super + e
 
 #Rofi
 super + w
-    rofi -show drun
+    ~/.config/rofi/launcher.sh
+    #rofi -show drun
 
 #Conky-toggle
 #super + c
@@ -77,37 +78,21 @@ super + h
 
 #arcolinux-logout
 super + x
-    ~/.config/rofi/powermenu/powermenu.sh
+    ~/.config/rofi/powermenu.sh
+    #~/.config/rofi/powermenu/powermenu.sh
     #arcolinux-logout
 
-#Rofi theme selector
-#super + r
-#    rofi-theme-selector
-
-#Urxvt
-#super + t
-#    urxvt
+# Visual Studio Code
+super + c
+    code
 
 #Pavucontrol
 super + v
     pavucontrol
 
-#Pragha
-#super + m
-#    pragha
-
 #urxvt
 super + Return
     alacritty
-
-#Xkill
-#super + Escape
-#    xkill
-
-#Keyboard dependent
-#urxvt
-#super + KP_Enter
-#	urxvt
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -194,10 +179,6 @@ ctrl + alt + m
 #Pulse Audio Control
 #ctrl + alt + u
 #     pavucontrol
-
-#Rofi theme selector
-ctrl + alt + r
-  rofi-theme-selector
 
 #Spotify
 #trl + alt + s
