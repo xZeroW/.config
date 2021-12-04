@@ -8,6 +8,6 @@ echo " > Set zsh as default shell for user"
 sudo -u vu chsh -s /usr/bin/zsh
 
 echo " > Symlink configs files"
-ln -s .dotfiles $HOME/.config
+ln -s .config $HOME/.config
 
 echo "Install Done!"
