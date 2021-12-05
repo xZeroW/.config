@@ -7,7 +7,10 @@ pacman -S --needed --noconfirm $USER_ARCH_PACKAGES
 echo " > Set zsh as default shell for user"
 sudo -u vu chsh -s /usr/bin/zsh
 
-echo " > Symlink configs files"
-ln -s .config $HOME/.config
+echo " > Copy configs files"
+cp -rT .config $HOME/.config
+
+echo " > Copy .zshrc"
+cp -T .zshrc $HOME/.zshrc
 
 echo "Install Done!"
