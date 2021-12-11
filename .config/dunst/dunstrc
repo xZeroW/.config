@@ -51,7 +51,7 @@
     appname = Discord
     format = "Discord\n%s\n%b"
 
-[spotify]
+[Spotify]
     history_ignore = yes
     appname = Spotify
     format = "<b><span foreground='#A3BE8C'></span> %a</b>\n%s"
