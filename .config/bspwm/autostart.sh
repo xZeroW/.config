@@ -17,5 +17,5 @@ numlockx on &
 picom --config ~/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 ~/.config/dunst/load.sh &
-setxkbmap -option grp:alt_shift_toggle us,br &
+setxkbmap -option grp:alt_shift_toggle br,us &
 wmname LG3D &
